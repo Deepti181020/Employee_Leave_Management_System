@@ -1,0 +1,90 @@
+.emp-edit-form {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emp-edit-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .emp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .emp-form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .emp-form label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .emp-form input,
+  .emp-form select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  .emp-form input:focus,
+  .emp-form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .form-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-btn button {
+    padding: 0.8rem 2rem;
+    background-color: #059669;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-btn button:hover {
+    background-color: #059669;
+  }
+  
+  @media (max-width: 768px) {
+    .emp-edit-form {
+      padding: 1.5rem;
+    }
+  
+    .emp-form div {
+      flex-direction: column;
+    }
+  }
+  
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .emp-edit-form {
+    margin-left: 18rem; 
+    margin-top: 60px; 
+  }
+  

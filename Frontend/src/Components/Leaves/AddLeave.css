@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+}
+
+.add-leave-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.add-leave-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 1.8rem;
+}
+
+.leave-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.leave-form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.leave-form-items label {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.leave-form-items select,
+.leave-form-items input,
+.leave-form-items textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.leave-form-items textarea {
+    resize: vertical; 
+}
+
+.leave-form-items select:focus,
+.leave-form-items input:focus,
+.leave-form-items textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.leave-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.leave-btn button {
+    padding: 12px 25px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leave-btn button:hover {
+    background-color: #357abd;
+}
+
+.success-message {
+    color: #28a745; 
+    background-color: #d4edda; 
+    padding: 1rem;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+ 
+  .error-message {
+    color: #dc3545; 
+    background-color: #f8d7da;
+    padding: 1rem;
+    border: 1px solid #dc3545;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+@media (max-width: 768px) {
+    .add-leave-form {
+        padding: 15px;
+    }
+
+    .add-leave-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .leave-form {
+        gap: 20px; 
+    }
+
+    .leave-form-items select,
+    .leave-form-items input,
+    .leave-form-items textarea {
+        font-size: 0.9rem;
+    }
+
+    .leave-btn button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-leave-form {
+        margin: 20px;
+    }
+
+    .leave-form-items {
+        gap: 8px; 
+    }
+
+    .leave-btn button {
+        width: 100%; 
+    }
+}

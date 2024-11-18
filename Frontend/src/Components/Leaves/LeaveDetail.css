@@ -1,0 +1,180 @@
+.leave-detail {
+    width: 100%;
+    max-width: 400px;
+    margin: 55px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.leave-detail-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.leave-detail-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 90%;
+}
+
+.leave-detail-items p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.leave-pending-btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.leave-pending-btn button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.leave-pending-btn button:first-child {
+    background-color: #4caf50; 
+    color: white;
+}
+
+.leave-pending-btn button:first-child:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.leave-pending-btn button:last-child {
+    background-color: #f44336; 
+    color: white;
+}
+
+.leave-pending-btn button:last-child:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+.rejection-comment {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rejection-comment textarea {
+    width: 70%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.rejection-comment textarea:focus {
+    border-color: #007bff;
+}
+
+.rejection-comment button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rejection-comment button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.loading-message,
+.error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff6347; 
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .leave-detail {
+        padding: 15px;
+    }
+
+    .leave-detail-title {
+        font-size: 1.8rem;
+    }
+
+    .leave-detail-items p {
+        font-size: 0.95rem;
+    }
+
+    .leave-pending-btn {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center;
+    }
+
+    .leave-pending-btn button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .rejection-comment textarea {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leave-detail {
+        padding: 10px;
+    }
+
+    .leave-detail-title {
+        font-size: 1.6rem;
+    }
+
+    .leave-detail-items p {
+        font-size: 0.85rem;
+    }
+
+    .leave-pending-btn button {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .rejection-comment textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .rejection-comment button {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}

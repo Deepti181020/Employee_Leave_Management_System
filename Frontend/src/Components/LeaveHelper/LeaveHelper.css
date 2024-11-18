@@ -1,0 +1,108 @@
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .view-leave-btn {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-leave-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #343a40; 
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8f9fa; 
+}
+
+.data-table tr:hover {
+    background-color: #e9ecef; 
+}
+
+  @media (max-width: 768px) {
+    table, th, td {
+      display: block;
+      width: 100%;
+    }
+  
+    th {
+      text-align: left;
+      font-size: 14px;
+    }
+  
+    td {
+      text-align: left;
+      padding-left: 50%; 
+      font-size: 14px;
+      position: relative;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-weight: bold;
+    }
+  
+    .view-leave-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    td {
+      font-size: 12px;
+    }
+  
+    th, td {
+      padding: 10px 5px;
+    }
+  
+    .view-leave-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  

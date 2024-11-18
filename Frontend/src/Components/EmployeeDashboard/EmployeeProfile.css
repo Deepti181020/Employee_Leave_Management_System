@@ -1,0 +1,39 @@
+.employee-profile-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 50vh; 
+    padding: 2rem;
+    background-color: #f7f7f7;
+  }
+
+  .profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    padding: 2rem;
+    width: 100%;
+    max-width: 700px; 
+    text-align: left;
+  }
+  
+  .profile-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #151716; 
+  }
+  
+ 
+  .profile-card p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #333; 
+  }
+ 
+  .employee-profile-container p {
+    font-size: 1.2rem;
+    color: #059669;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  

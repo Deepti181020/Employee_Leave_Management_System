@@ -1,0 +1,66 @@
+.manager-description {
+    margin-left: 16rem; 
+    margin-top: 3.5rem; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: calc(100% - 16rem); 
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+
+.manager-dashboard-overview {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #059669;
+}
+
+
+.manager-leave-details h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+
+.manager-leave-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+.manager-leave-menu-items {
+    flex: 1 1 calc(25% - 1rem); 
+    min-width: 200px;
+    max-width: 300px;
+}
+.manage-desc-overview{
+    width :250px;
+}
+.dashboard-link{
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .manager-description {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .manager-leave-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .manager-leave-menu-items {
+        flex: 1 1 100%; 
+    }
+}

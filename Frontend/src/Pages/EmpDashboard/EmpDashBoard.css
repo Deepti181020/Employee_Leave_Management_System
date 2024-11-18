@@ -1,0 +1,84 @@
+.emp-dashboard {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dashboard-sidebar-emp {
+    width: 16rem;
+    background-color: #2d2d2d;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.dashboard-nav {
+    position: fixed;
+    top: 0;
+    left: 16rem;
+    z-index: 1;
+    background-color: #059669;
+    color: white;
+    width: calc(100% - 16rem);
+}
+
+
+.emp-dashboard-body {
+    margin-top: 4.5rem; 
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 2rem;
+    width: calc(100% - 16rem); 
+  
+    overflow-y: auto;
+}
+
+
+.emp-outlet {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: white;
+}
+
+
+@media (max-width: 768px) {
+    .emp-dashboard {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar-emp {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .dashboard-nav {
+        left: 0;
+        width: 100%;
+    }
+
+    .emp-dashboard-body {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .emp-outlet {
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .dashboard-nav {
+        padding: 1rem;
+    }
+
+    .emp-dashboard-body {
+        gap: 1rem;
+    }
+}

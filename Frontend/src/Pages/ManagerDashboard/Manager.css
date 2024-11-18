@@ -1,0 +1,13 @@
+.manager-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #059669;
+    color: white;
+    width: calc(100% - 18rem);
+}
+.manager-dashboard-body{
+    left: 16rem;
+}
+

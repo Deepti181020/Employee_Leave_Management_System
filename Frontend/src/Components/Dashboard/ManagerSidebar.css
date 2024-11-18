@@ -1,0 +1,58 @@
+.manager-sidebar {
+    background-color: #2d2d2d;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.manager-sidebar-title {
+    background-color: #059669;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.manager-sidebar-title h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.sidebar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 1rem;
+}
+
+.manager-sidebar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    color: white;
+}
+
+.manager-sidebar-menu:hover {
+    color: #a0a0a0;
+}
+
+.manager-sidebar-menu svg {
+    font-size: 1.25rem;
+}
+
+.sidebar-title {
+    font-size: 1.1rem;
+}

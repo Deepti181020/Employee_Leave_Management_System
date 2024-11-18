@@ -1,0 +1,78 @@
+.emp-add-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emp-add-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.emp-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.emp-form label {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    margin-bottom: 0.3rem; 
+}
+
+.emp-form input,
+.emp-form select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem; 
+}
+
+.emp-form input:focus,
+.emp-form select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.form-btn {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.form-btn button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn button:hover {
+    background-color: #218838;
+}
+
+@media (min-width: 768px) {
+    .emp-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .emp-add-form {
+        padding: 1rem;
+    }
+}
