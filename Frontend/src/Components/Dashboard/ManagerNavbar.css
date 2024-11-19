@@ -3,31 +3,69 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    height: 3.4rem; 
+    height: 3.4rem;
     background-color: #059669;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 16rem;
+    margin-left: 16rem; 
+    transition: margin-left 0.3s ease;
 }
 
 .manager-logout-btn {
-    background-color: #ffffff; 
-    color: #059669; 
-    padding: 0.5rem 1rem; 
-    border: none; 
-    border-radius: 5px; 
+    background-color: #ffffff;
+    color: #059669;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer; 
-    transition: background-color 0.3s ease, transform 0.2s ease; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .manager-logout-btn:focus {
-    outline: none; 
+    outline: none;
 }
 
 .manager-logout-btn:active {
-    background-color: #d4d4d4; 
+    background-color: #d4d4d4;
+}
+
+@media (max-width: 768px) {
+    .manager-navbar {
+        font-size: 18px;
+        margin-left: 12rem;
+        padding: 0 0.5rem;
+    }
+
+    .manager-logout-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .manager-navbar {
+        margin-left: 0; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 0.5rem;
+        gap: 0.5rem; 
+    }
+
+    .manager-navbar p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .manager-logout-btn {
+        width: 100%;
+        max-width: 200px;
+        padding: 0.6rem;
+        font-size: 16px;
+    }
 }
