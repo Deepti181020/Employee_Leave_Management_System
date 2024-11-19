@@ -33,7 +33,7 @@ const UserLogin = () => {
             }
 
             console.log("Success:", data);
-            setError("Login Successfully");
+            setError("Login Failed");
             login(data.user);  
             if (data.token) {
                 localStorage.setItem("token", data.token);  
